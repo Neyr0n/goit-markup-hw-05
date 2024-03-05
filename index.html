@@ -443,6 +443,7 @@
             growth solutions.
           </p>
         </div>
+
         <div class="footer-links">
           <p class="footer-links-title">Social media</p>
           <ul class="team-icons team-icons-ftr">
@@ -476,7 +477,108 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-form-wrapper">
+          <p class="footer-form-text footer-links-title">Subscribe</p>
+
+          <div class="footer-input-wrapper">
+            <form>
+              <input type="email" placeholder="E-mail" class="footer-input" />
+            </form>
+
+            <button class="footer-form-btn" type="submit">
+              Subscribe
+              <svg class="footer-form-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close" type="button">
+          <svg class="modal-close-icon" width="8" height="8" aria-label="close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+
+        <form class="review-form">
+          <div class="review-form-wrapper">
+            <label for="user-name" class="review-form-label">Name</label>
+            <div class="review-wrapper-icons">
+              <input type="text" class="review-input" name="user-name" id="user-name" />
+              <svg class="review-input-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+
+        <form class="review-form">
+          <div class="review-form-wrapper">
+            <label for="user-phone" class="review-form-label">Phone</label>
+            <div class="review-wrapper-icons">
+              <input type="tel" class="review-input" name="user-phone" id="user-phone" />
+              <svg class="review-input-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+
+        <form class="review-form">
+          <div class="review-form-wrapper">
+            <label for="user-email" class="review-form-label">Email</label>
+            <div class="review-wrapper-icons">
+              <input type="email" class="review-input" name="user-email" id="user-email" />
+              <svg class="review-input-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+
+        <form class="review-form">
+          <div class="review-form-wrapper">
+            <label for="user-review" class="review-form-label">Comment</label>
+            <div class="review-wrapper-icons">
+              <textarea
+                class="review-message"
+                placeholder="Text input"
+                name="user-review"
+                id="user-review"
+              ></textarea>
+            </div>
+          </div>
+        </form>
+
+        <div class="chekbox-wrapper">
+          <input
+            type="checkbox"
+            class="review-form-chekbox visually-hidden"
+            name="privacy-policy"
+            id="privacy-policy"
+            value="true"
+            required
+          />
+          <label for="privacy-policy" class="review-chekbox-label"
+            ><span class="review-chekbox-wrapper">
+              <svg class="review-chekbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-chekbox"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="checkbox-label-link" href="">Privacy Policy</a></label
+          >
+        </div>
+
+        <button type="submit" class="modal-btn-send">Send</button>
+      </div>
+    </div>
   </body>
 </html>
