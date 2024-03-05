@@ -619,7 +619,7 @@ body {
   margin-bottom: 8px;
 }
 
-.review-form-wrapper:last-of-type {
+.review-form-wrapper:nth-child(4) {
   margin-bottom: 16px;
 }
 
